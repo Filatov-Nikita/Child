@@ -17,6 +17,7 @@
 }
 
 .children .wrapper .container .item {
+  background: #ececec;
   margin-bottom: 15px;
   box-sizing: border-box;
   margin-left: 15px;
@@ -36,7 +37,6 @@
 }
 
 .children .wrapper .container .item .gray_block {
-  background: #ececec;
   box-sizing: border-box;
   padding: 10px 20px;
 }
@@ -69,6 +69,12 @@
 
 .children .wrapper .news .item {
   width: calc(41.66666666666667% - 30px);
+  display: flex;
+  flex-direction: column;
+}
+
+.children .wrapper .news .item .green_block {
+  margin-top: auto;
 }
 
 body,
