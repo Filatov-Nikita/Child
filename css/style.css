@@ -77,49 +77,44 @@
   margin-top: auto;
 }
 
-.programms {
-  margin-top: 50px;
+.content {
+  margin-bottom: 20px;
 }
 
-.programms .wrapper .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.programms .wrapper .container .item {
-  width: 32%;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 50px;
-}
-
-.programms .wrapper .container .item .img {
+.content .foto {
   text-align: center;
-  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
-.programms .wrapper .container .item .img img {
-  transition: opacity, 300ms;
+.content .text {
+  font: 24px 'open-sans';
+  line-height: 1.7em;
+  color: #404040;
+  margin-bottom: 20px;
 }
 
-.programms .wrapper .container .item .img img:hover {
-  opacity: 0.7;
-}
-
-.programms .wrapper .container .item .orange_block {
-  width: 95%;
+.content .btn {
+  background: #f7616b;
+  max-width: 300px;
   text-align: center;
-  background: #f78161;
-  color: #fff;
+  padding: 15px 0;
+  margin: 0 auto;
+  transition: background, 0.3s;
+}
+
+.content .btn:hover {
+  background: #98B028;
+}
+
+.content .btn a {
   font: 26px lora;
-  padding: 15px 10px;
-  transform: translateY(-32px) skew(-30deg) translateX(-15px);
-}
-
-.programms .wrapper .container .item .orange_block span {
-  display: inline-block;
-  transform: skew(30deg);
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 body,
@@ -505,14 +500,6 @@ footer .wrapper .menu ul li a:hover {
 }
 
 @media screen and (max-width: 960px) {
-  .programms .wrapper .container .item {
-    width: 42%;
-  }
-
-  .programms .wrapper .container .item .orange_block {
-    font: 26px lora;
-  }
-
   .wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -530,14 +517,6 @@ footer .wrapper .menu ul li a:hover {
 @media screen and (max-width: 870px) {
   .children .wrapper .container .item {
     width: calc(83.33333333333334% - 30px);
-  }
-
-  .programms .wrapper .container .item {
-    width: 50%;
-  }
-
-  .programms .wrapper .container .item .orange_block {
-    font: 18px lora;
   }
 
   .wrapper {
@@ -561,6 +540,11 @@ footer .wrapper .menu ul li a:hover {
 
   .children .wrapper .container .item .gray_block .discription {
     font-size: 18px;
+  }
+
+  .content .text {
+    font: 20px 'open-sans';
+    line-height: 1.5em;
   }
 
   .wrapper {
@@ -627,8 +611,9 @@ footer .wrapper .menu ul li a:hover {
 }
 
 @media screen and (max-width: 560px) {
-  .programms .wrapper .container .item {
-    width: 95%;
+  .content .text {
+    font: 18px 'open-sans';
+    line-height: 1.5em;
   }
 
   .wrapper {
