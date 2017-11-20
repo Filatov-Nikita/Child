@@ -283,6 +283,21 @@ body {
   background: #fff;
 }
 
+.button_up {
+  background: #f7616b;
+  width: 45px;
+  height: 55px;
+  padding: 0 5px;
+  position: fixed;
+  right: 40px;
+  bottom: 3%;
+  border: 1px solid rgba(148, 75, 56, 0.8);
+}
+
+.button_up img {
+  margin-top: 12px;
+}
+
 .menuS {
   display: none;
 }
